@@ -10,10 +10,10 @@ export default function ProductPreview() {
           <div className="flex flex-col md:flex-row bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
             <div className="md:w-1/3 mb-4 md:mb-0 flex justify-center items-center">
               <Image
-                src="/placeholder.svg?height=300&width=300"
+                src="/placeholder.svg?height=200&width=200"
                 alt="제품 이미지"
-                width={300}
-                height={300}
+                width={200}
+                height={200}
                 className="rounded-lg w-full h-auto"
               />
             </div>
