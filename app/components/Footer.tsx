@@ -11,6 +11,7 @@ export default function Footer() {
             <p>사업자명: 네오레오</p>
             <p>사업자등록번호: 356-06-03635</p>
             <p>대표: 나찬혁</p>
+            <p>Email: nch6807@naver.com</p>
           </div>
 
 
