@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Download, Star, Zap, Puzzle } from 'lucide-react'
+import GameplayDemo from '../components/GamePlaydemo'
 
 export default function ProductPreview() {
   return (
@@ -23,13 +24,8 @@ export default function ProductPreview() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Image
-                src="/placeholder.svg?height=200&width=200"
-                alt="Area Tetris 게임 이미지"
-                width={200}
-                height={200}
-                className="rounded-xl shadow-lg w-full h-auto"
-              />
+              {/* 기존 이미지 대신 GameplayDemo 컴포넌트를 표시 */}
+              <GameplayDemo />
             </motion.div>
             <div className="lg:w-1/2 lg:pl-12">
               <motion.h3
@@ -85,10 +81,18 @@ export default function ProductPreview() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1 }}
               >
-                <Link href="/product" className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-full hover:from-blue-700 hover:to-indigo-700 transition duration-300 inline-block shadow-md hover:shadow-lg transform hover:-translate-y-1">
+                <Link
+                  href="/product"
+                  className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-full hover:from-blue-700 hover:to-indigo-700 transition duration-300 inline-block shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                >
                   자세히 보기
                 </Link>
-                <a href="https://apps.apple.com/kr/app/area-tetris/id6737521199" target="_blank" rel="noopener noreferrer" className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-900 transition duration-300 inline-block shadow-md hover:shadow-lg transform hover:-translate-y-1 flex items-center">
+                <a
+                  href="https://apps.apple.com/kr/app/area-tetris/id6737521199"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-900 transition duration-300 inline-block shadow-md hover:shadow-lg transform hover:-translate-y-1 flex items-center"
+                >
                   <Download className="w-5 h-5 mr-2" />
                   iOS 다운로드
                 </a>
@@ -100,4 +104,3 @@ export default function ProductPreview() {
     </section>
   )
 }
-
