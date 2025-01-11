@@ -24,7 +24,6 @@ export default function GameplayDemo() {
     <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container mx-auto px-4">
 
-
         {/* react-slick 슬라이더 영역 */}
         <Slider {...settings}>
           {/* 첫 번째 카드 */}
@@ -36,13 +35,12 @@ export default function GameplayDemo() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <div className="aspect-video relative mb-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden group">
+              <div className="aspect-video relative mb-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/block_move-JTvAloocA1uM9yaCLtcDXqVfY84nXC.gif"
+                  src="/images/block_move.gif"
                   alt="블록 이동 데모"
                   className="absolute inset-0 w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="flex items-start space-x-4">
                 <MousePointer className="w-8 h-8 text-blue-500 flex-shrink-0 mt-1" />
@@ -66,13 +64,12 @@ export default function GameplayDemo() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="aspect-video relative mb-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden group">
+              <div className="aspect-video relative mb-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/block_remove-hBBnxTTaf7BpDTQ4PKw2pblpPx9udf.gif"
+                  src="/images/block_remove.gif"
                   alt="영역 제거 데모"
                   className="absolute inset-0 w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="flex items-start space-x-4">
                 <Target className="w-8 h-8 text-blue-500 flex-shrink-0 mt-1" />
@@ -97,13 +94,12 @@ export default function GameplayDemo() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <div className="aspect-video relative mb-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden group">
+              <div className="aspect-video relative mb-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg overflow-hidden">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/block_end-RyspR5jMVsxmZH6sQjPUqTInUVTEgy.gif"
+                  src="/images/block_end.gif"
                   alt="게임 진행 데모"
                   className="absolute inset-0 w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="flex items-start space-x-4">
                 <Sparkles className="w-8 h-8 text-blue-500 flex-shrink-0 mt-1" />
@@ -118,7 +114,6 @@ export default function GameplayDemo() {
             </motion.div>
           </div>
         </Slider>
-
 
       </div>
     </section>
