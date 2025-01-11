@@ -7,7 +7,7 @@ export default function Header() {
         <Link href="/" className="text-xl font-bold mb-4 md:mb-0">Neoreo</Link>
         <ul className="flex space-x-4">
           <li><Link href="/about" className="hover:text-blue-600">회사 소개</Link></li>
-          <li><Link href="/product" className="hover:text-blue-600">제품 소개</Link></li>
+          <li><Link href="/product" className="hover:text-blue-600">게임 소개</Link></li>
           <li><Link href="/faq" className="hover:text-blue-600">FAQ</Link></li>
         </ul>
       </nav>
