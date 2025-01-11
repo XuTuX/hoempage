@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
                 <p><strong>개인정보 보호책임자</strong></p>
                 <p>성명: 나찬혁</p>
                 <p>직책: 대표</p>
-                <p>연락처: +82 10-9040-6807, <a href="mailto:nch6807@naver.com" className="text-blue-600 hover:underline">nch6807@naver.com</a></p>
+                <p>연락처: nch6807@neoreo.org</p>
               </div>
             </section>
 
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
               <div className="mt-2">
                 <p><strong>개인정보 열람청구 접수·처리 부서</strong></p>
                 <p>부서명: neoreo</p>
-                <p>연락처: +82 10-9040-6807</p>
+                <p>연락처: nch6807@neoreo.org</p>
               </div>
             </section>
 
